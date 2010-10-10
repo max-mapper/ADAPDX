@@ -1,0 +1,38 @@
+<html xmlns="http://www.w4.org/1999/xhtml">
+  <head>
+    <meta name="apple-mobile-web-app-capable" content = "yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content = "black-translucent" />
+    <meta name="viewport" content = "initial-scale = 1.0, user-scalable = no" />
+    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css" />
+    <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    <script src="/script/multitouch/mousewheelfix.js"></script>
+    <script src="/script/multitouch/multitouchhandler.js"></script>
+    <script src="/script/multitouch/multitouchnavigation.js"></script>
+    <script src='http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAUXDSXET8IRGdgHP9FpGw5BTMslYslcszQyvGSN50mVNrss2NzBROyONuUe4FDz7uVYUqbwGQC-3k5g'></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/script/geobrowser.js"></script>
+    <link rel="stylesheet" href="/style/geobrowser.css">
+  </head>
+  <body>
+    <div id="loader"><img src='http://imgur.com/yQjd8.gif'></div>
+    <div id="map" class="smallmap"></div>
+    <form action="#" class="geocoder_form">    
+      <input type="text" class="geocoder" name="address" value="Downtown Portland, OR" />
+      <input type="submit" value="Go there"/>
+    </form>
+    <div id ="sidebar">
+      <div id ="menu" class="block"><h1>ADA PDX</h1>
+        <ul id="databases">
+          <li>sidewalks</li>
+          <li>curb_ramps</li>
+          <li>buslines</li>
+          <li>busstops</li>
+          <li>lrt_line<li>
+          <li>lrt_stop<li>
+          <li>traffic_signals</li>
+        </ul>
+      </div>
+      <div id ="metadata" class="block"></div>
+    </div>
+  </body>
+</html>
