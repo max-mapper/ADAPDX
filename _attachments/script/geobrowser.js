@@ -156,8 +156,9 @@ $(function() {
   Map.styleMap = new OpenLayers.StyleMap({
     'default': OpenLayers.Util.applyDefaults({
       fillOpacity: 0.2, 
-      strokeColor: "black", 
-      strokeWidth: 4,
+      strokeOpacity: 0.7,
+      strokeColor: "#B36896", 
+      strokeWidth: 10,
       pointRadius: 10
     }),
     'select': new OpenLayers.Style({
@@ -203,7 +204,7 @@ $(function() {
   
   
   $('#databases li').click(function(){
-    var dataset = $(this).text();
+    var dataset = $(this).attr('id');
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
     Map.currentDataset = dataset;

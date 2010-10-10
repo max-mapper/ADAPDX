@@ -14,7 +14,10 @@ form {padding: 0; margin: 0;}
 .geocoder {width: 200px; border: 1px solid black;}
 h3 {font-size: 20px; padding: 0; margin: 0;}
 #metadata { height: 50%; overflow: auto; margin-left: 10px;}
-#menu { height: 50%; overflow: auto; margin-left: 10px;}
+#about {padding: 10px; position: absolute; bottom: 0px; right: 0px;}
+#menu { height: 40%; overflow: auto; margin-left: 10px;}
+.title {font-size: 20px; margin-top: 17px;}
+.subheader {font-size: 14px; font-style: italic; text-align: center;}
 body {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
   font-size: 16px;

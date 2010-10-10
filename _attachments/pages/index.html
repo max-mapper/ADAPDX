@@ -1,5 +1,6 @@
 <html xmlns="http://www.w4.org/1999/xhtml">
   <head>
+    <title>Portland, OR Accessibility Maps</title>
     <meta name="apple-mobile-web-app-capable" content = "yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content = "black-translucent" />
     <meta name="viewport" content = "initial-scale = 1.0, user-scalable = no" />
@@ -21,18 +22,21 @@
       <input type="submit" value="Go there"/>
     </form>
     <div id ="sidebar">
-      <div id ="menu" class="block"><h1>ADA PDX</h1>
+      <div id ="menu" class="block">
+       <div class="title">Portland, OR Accessibility Maps</div>
+       <div class="subheader">(rough version; work in progress)</div>
         <ul id="databases">
-          <li>sidewalks</li>
-          <li>curb_ramps</li>
-          <li>buslines</li>
-          <li>busstops</li>
-          <li>lrt_line<li>
-          <li>lrt_stop<li>
-          <li>traffic_signals</li>
+          <li id='sidewalks'>Sidewalks</li>
+          <li id='curb_ramps'>Curb ramps (curb cuts)</li>
+          <li id='buslines'>Bus routes</li>
+          <li id='busstops'>Bus stops</li>
+          <li id='lrt_line'>MAX routes<li>
+          <li id='lrt_stop'>MAX stops<li>
+          <li id='traffic_signals'>Traffic Lights</li>
         </ul>
       </div>
       <div id ="metadata" class="block"></div>
+      <div id ="about" class="block">By <a href='http://maxogden.com'>Max Ogden</a>. Powered by <a href="http://pdxapi.com">PDXAPI</a></div>
     </div>
   </body>
 </html>
